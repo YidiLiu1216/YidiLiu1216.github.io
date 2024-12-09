@@ -1,10 +1,96 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <title>My Cool Website</title>
-   </head>
-   <body>
-      <h1>Welcome to my website! ⭐️</h1>
-      <p>How was your day? 🎉</p>
-   </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 1rem;
+      display: block;
+    }
+    nav a:hover {
+      background-color: #575757;
+    }
+    section {
+      padding: 2rem;
+    }
+    .portfolio-item {
+      border: 1px solid #ddd;
+      margin: 1rem 0;
+      padding: 1rem;
+    }
+    .portfolio-item h3 {
+      margin-top: 0;
+    }
+    .portfolio-item a {
+      color: #4CAF50;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      background-color: #f1f1f1;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+  </header>
+  <nav>
+    <a href="#about-me">About Me</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  
+  <section id="about-me">
+    <h2>About Me</h2>
+    <p>Hello! My name is [Your Name], and I'm passionate about game design and development. I love creating engaging experiences that combine storytelling, mechanics, and player interaction. Outside of game development, I enjoy photography, painting, and exploring nature.</p>
+  </section>
+  
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-item">
+      <h3>Project 1: Top 3 Reasons You Miss Your Essay Deadline</h3>
+      <p>A 2D platformer game about internet distractions and information overload. Features unique level designs and mechanics.</p>
+      <a href="https://example.com/project1-download" download>Download Project</a> |
+      <a href="https://example.com/project1-video" target="_blank">Watch Video</a>
+    </div>
+    <div class="portfolio-item">
+      <h3>Project 2: Wings of Migration</h3>
+      <p>A board game exploring bird migration and conservation challenges. Includes beautifully designed cards and mechanics.</p>
+      <a href="https://example.com/project2-download" download>Download Project</a> |
+      <a href="https://example.com/project2-video" target="_blank">Watch Video</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>If you'd like to get in touch, email me at <a href="mailto:yourname@example.com">yourname@example.com</a>.</p>
+  </section>
+  
+  <footer>
+    <p>© 2024 [Your Name]. All rights reserved.</p>
+  </footer>
+</body>
 </html>
