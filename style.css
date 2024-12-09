@@ -1,47 +1,53 @@
 body {
   margin: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
 }
 
+/* Header */
+header {
+  background: #007acc;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+/* About Me Section */
 #about-me {
   text-align: center;
-  padding: 20px;
-  background-color: #ffffff;
+  padding: 50px 20px;
+  background: white;
+  margin: 20px auto;
+  max-width: 800px;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#about-me h2 {
-  font-size: 2em;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-#about-me p {
-  font-size: 1.1em;
-  line-height: 1.6;
-  color: #555;
-}
-
-.profile-photo {
+#about-me .profile-photo {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  margin-bottom: 20px;
+  display: block;
+  margin: 0 auto 20px;
 }
 
 .download-link {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #007acc;
+  background: #007acc;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -51,51 +57,50 @@ body {
 .download-link:hover {
   background-color: #005fa3;
 }
+
 #portfolio {
-    margin: 20px auto;
-    text-align: center;
+  padding: 50px 20px;
+}
+
+#portfolio h2 {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .portfolio-item {
-    display: inline-block;
-    width: 300px;
-    margin: 20px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    background-color: #f9f9f9;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .portfolio-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
-.portfolio-item h3 {
-    font-size: 20px;
-    margin: 10px 0;
+.portfolio-link {
+  display: inline-block;
+  margin: 10px 5px;
+  padding: 8px 15px;
+  background-color: #007acc;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-.portfolio-item p {
-    font-size: 16px;
-    color: #555;
+.portfolio-link:hover {
+  background-color: #005fa3;
 }
 
-.portfolio-item a {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 8px 12px;
-    text-decoration: none;
-    background-color: #007bff;
-    color: #fff;
-    border-radius: 4px;
-    font-size: 14px;
-}
 
-.portfolio-item a:hover {
-    background-color: #0056b3;
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+  margin-top: 20px;
 }
