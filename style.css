@@ -1,109 +1,70 @@
-/* General Styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  background-color: #f9f9f9;
-  color: #333;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yidi Liu Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <h1>Yidi Liu</h1>
+      <p>Game Designer & Developer</p>
+      <nav>
+        <a href="#about-me">About Me</a>
+        <a href="#portfolio">Portfolio</a>
+      </nav>
+    </div>
+  </header>
 
-header {
-  background: #007acc;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
-}
+  <!-- Main Content -->
+  <main>
+    <!-- About Me Section -->
+    <section id="about-me" class="container">
+      <h2>About Me</h2>
+      <div class="about-me-content">
+        <img src="img/photo.jpg" alt="Photo of Yidi Liu" class="profile-photo">
+        <div class="about-text">
+          <p>Hello! My name is Yidi Liu, and I'm passionate about game design and development.<br>
+             I received a Bachelor of Science degree from Beijing University of Posts and Telecommunication in 2018<br>
+             and a Master of Science degree from Northeastern University in 2020.<br>
+             I enjoy creating engaging experiences that combine storytelling, mechanics, and player interaction.<br>
+             Outside of game development, I love photography, painting, and exploring nature.</p>
+          <div class="link-container">
+            <a href="documents/Yidi_Liu_Resume.pdf" download="Yidi_Liu_Resume" class="button">Download My Resume</a>
+            <a href="https://your-itch-io-profile.com" target="_blank" class="button">Visit My Itch.io</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-main {
-  padding: 20px;
-}
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="container">
+      <h2>Portfolio</h2>
+      <div class="portfolio-grid">
+        <!-- Portfolio Item -->
+        <div class="portfolio-item">
+          <img src="img/battle.png" alt="Preview of Mind Battlefront" class="portfolio-image">
+          <h3>Mind Battlefront</h3>
+          <p>A grid-based strategy game about human strategy vs reinforcement model learning ability.</p>
+          <div class="project-links">
+            <a href="https://example-itch.io/mind-battlefront" target="_blank" class="button">Play on Itch.io</a>
+            <a href="documents/mind_battlefront_doc.pdf" target="_blank" class="button">Download Documentation</a>
+            <a href="https://www.youtube.com/watch?v=example" target="_blank" class="button">Watch on YouTube</a>
+          </div>
+        </div>
 
-h1, h2 {
-  margin: 10px 0;
-}
-
-/* About Me Section */
-#about-me {
-  text-align: center;
-  margin: 20px auto;
-}
-
-.profile-photo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto;
-}
-
-.link-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.download-link,
-.itch-link {
-  display: inline-block;
-  padding: 10px 20px;
-  background: #007acc;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.download-link:hover,
-.itch-link:hover {
-  background-color: #005fa3;
-}
-
-/* Portfolio Section */
-#portfolio {
-  margin: 40px auto;
-}
-
-.portfolio-item {
-  border: 1px solid #ccc;
-  padding: 20px;
-  margin-bottom: 20px;
-  background: white;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.portfolio-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-.portfolio-item h3 {
-  margin: 10px 0;
-}
-
-.portfolio-item a {
-  display: inline-block;
-  margin: 5px 5px;
-  padding: 8px 15px;
-  background: #007acc;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.portfolio-item a:hover {
-  background-color: #005fa3;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 10px;
-  background: #333;
-  color: white;
-}
+        <!-- Add More Portfolio Items -->
+        <div class="portfolio-item">
+          <img src="img/essay.png" alt="Preview of Essay Deadline Game" class="portfolio-image">
+          <h3>Top 3 Reasons You Will Miss Your Essay Deadline</h3>
+          <p>A 2D platformer about overwhelming internet distractions and information overload.</p>
+          <div class="project-links">
+            <a href="https://example-itch.io/essay-deadline" target="_blank" class="button">Play on Itch.io</a>
+            <a href="documents/essay_deadline_doc.pdf" target="_blank" class="button">Download Documentation</a>
+            <a href="https://www.youtube.com/watch?v=example" target="_blank" class="button">Watch on YouTube</a>
+          </div>
+        </div>
+      </di
