@@ -7,28 +7,80 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Yidi Liu - Game Designer</h1>
-  </header>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#about-me">About Me</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-  <main>
-    <!-- About Me Section -->
-    <section id="about-me">
+  <!-- About Me Section -->
+  <section id="about-me" class="section">
+    <div class="container">
       <h2>About Me</h2>
-      <img src="img/photo.jpg" alt="A photo of Yidi Liu" class="profile-photo">
-      <p>Hello! My name is Yidi Liu, and I'm passionate about game design and development.<br>
-         I received a Bachelor of Science degree from Beijing University of Posts and Telecommunication in 2018<br>
-         and a Master of Science degree from Northeastern University in 2020.<br>
-         I enjoy creating engaging experiences that combine storytelling, mechanics, and player interaction.<br>
-         Outside of game development, I love photography, painting, and exploring nature.</p>
-      <div class="link-container">
-       
+      <div class="about-me-content">
+        <img src="img/photo.jpg" alt="Photo of Yidi Liu" class="profile-photo">
+        <div class="about-text">
+          <p>Hello! My name is Yidi Liu, and I'm passionate about game design and development.<br>
+             I received a Bachelor of Science degree from Beijing University of Posts and Telecommunication in 2018<br>
+             and a Master of Science degree from Northeastern University in 2020.<br>
+             Outside of game development, I enjoy photography, painting, and exploring nature.</p>
+          <div class="link-container">
+            <a href="documents/Yidi_Liu_Resume.pdf" download="Yidi_Liu_Resume" class="button">Download My Resume</a>
+            <a href="https://your-itch-io-profile.com" target="_blank" class="button">Visit My Itch.io</a>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="section">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <div class="portfolio-grid">
+        <!-- Portfolio Item -->
+        <div class="portfolio-item">
+          <img src="img/battle.png" alt="Preview of Mind Battlefront" class="portfolio-image">
+          <h3>Mind Battlefront</h3>
+          <p>A grid-based strategy game about human strategy vs reinforcement model learning ability.</p>
+          <div class="project-links">
+            <a href="https://example-itch.io/mind-battlefront" target="_blank" class="button">Play on Itch.io</a>
+            <a href="documents/mind_battlefront_doc.pdf" target="_blank" class="button">Download Documentation</a>
+            <a href="https://www.youtube.com/watch?v=example" target="_blank" class="button">Watch on YouTube</a>
+          </div>
+        </div>
 
+        <!-- Add More Portfolio Items -->
+        <div class="portfolio-item">
+          <img src="img/essay.png" alt="Preview of Essay Deadline Game" class="portfolio-image">
+          <h3>Top 3 Reasons You Will Miss Your Essay Deadline</h3>
+          <p>A 2D platformer about overwhelming internet distractions and information overload.</p>
+          <div class="project-links">
+            <a href="https://example-itch.io/essay-deadline" target="_blank" class="button">Play on Itch.io</a>
+            <a href="documents/essay_deadline_doc.pdf" target="_blank" class="button">Download Documentation</a>
+            <a href="https://www.youtube.com/watch?v=example" target="_blank" class="button">Watch on YouTube</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>If you'd like to get in touch, feel free to email me at:</p>
+      <p><a href="mailto:yidi.liu@example.com" class="contact-link">yidi.liu@example.com</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
     <p>&copy; 2024 Yidi Liu. All rights reserved.</p>
   </footer>
 </body>
 </html>
+
