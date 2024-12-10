@@ -1,3 +1,4 @@
+/* General Reset */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -58,6 +59,7 @@ header p {
   background-color: #005fa3;
 }
 
+/* Portfolio Section */
 #portfolio {
   padding: 50px 20px;
 }
@@ -96,7 +98,7 @@ header p {
   background-color: #005fa3;
 }
 
-
+/* Footer */
 footer {
   text-align: center;
   padding: 20px;
