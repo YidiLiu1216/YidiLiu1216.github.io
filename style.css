@@ -1,70 +1,128 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yidi Liu Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <!-- Header Section -->
-  <header>
-    <div class="container">
-      <h1>Yidi Liu</h1>
-      <p>Game Designer & Developer</p>
-      <nav>
-        <a href="#about-me">About Me</a>
-        <a href="#portfolio">Portfolio</a>
-      </nav>
-    </div>
-  </header>
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f4f4f9;
+  color: #333;
+}
 
-  <!-- Main Content -->
-  <main>
-    <!-- About Me Section -->
-    <section id="about-me" class="container">
-      <h2>About Me</h2>
-      <div class="about-me-content">
-        <img src="img/photo.jpg" alt="Photo of Yidi Liu" class="profile-photo">
-        <div class="about-text">
-          <p>Hello! My name is Yidi Liu, and I'm passionate about game design and development.<br>
-             I received a Bachelor of Science degree from Beijing University of Posts and Telecommunication in 2018<br>
-             and a Master of Science degree from Northeastern University in 2020.<br>
-             I enjoy creating engaging experiences that combine storytelling, mechanics, and player interaction.<br>
-             Outside of game development, I love photography, painting, and exploring nature.</p>
-          <div class="link-container">
-            <a href="documents/Yidi_Liu_Resume.pdf" download="Yidi_Liu_Resume" class="button">Download My Resume</a>
-            <a href="https://your-itch-io-profile.com" target="_blank" class="button">Visit My Itch.io</a>
-          </div>
-        </div>
-      </div>
-    </section>
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="container">
-      <h2>Portfolio</h2>
-      <div class="portfolio-grid">
-        <!-- Portfolio Item -->
-        <div class="portfolio-item">
-          <img src="img/battle.png" alt="Preview of Mind Battlefront" class="portfolio-image">
-          <h3>Mind Battlefront</h3>
-          <p>A grid-based strategy game about human strategy vs reinforcement model learning ability.</p>
-          <div class="project-links">
-            <a href="https://example-itch.io/mind-battlefront" target="_blank" class="button">Play on Itch.io</a>
-            <a href="documents/mind_battlefront_doc.pdf" target="_blank" class="button">Download Documentation</a>
-            <a href="https://www.youtube.com/watch?v=example" target="_blank" class="button">Watch on YouTube</a>
-          </div>
-        </div>
+h1, h2, h3 {
+  color: #333;
+}
 
-        <!-- Add More Portfolio Items -->
-        <div class="portfolio-item">
-          <img src="img/essay.png" alt="Preview of Essay Deadline Game" class="portfolio-image">
-          <h3>Top 3 Reasons You Will Miss Your Essay Deadline</h3>
-          <p>A 2D platformer about overwhelming internet distractions and information overload.</p>
-          <div class="project-links">
-            <a href="https://example-itch.io/essay-deadline" target="_blank" class="button">Play on Itch.io</a>
-            <a href="documents/essay_deadline_doc.pdf" target="_blank" class="button">Download Documentation</a>
-            <a href="https://www.youtube.com/watch?v=example" target="_blank" class="button">Watch on YouTube</a>
-          </div>
-        </div>
-      </di
+/* Header Section */
+header {
+  background: linear-gradient(to right, #007acc, #005fa3);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+header nav {
+  margin-top: 15px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* About Me Section */
+#about-me {
+  padding: 50px 0;
+}
+
+.about-me-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.about-text {
+  max-width: 600px;
+}
+
+.link-container {
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #007acc;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 5px;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background: #005fa3;
+}
+
+/* Portfolio Section */
+#portfolio {
+  padding: 50px 0;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.portfolio-item {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.portfolio-image {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.project-links {
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+}
