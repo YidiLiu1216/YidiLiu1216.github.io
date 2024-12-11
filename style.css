@@ -115,6 +115,50 @@ h1, h2, h3 {
 .project-links {
   margin-top: 10px;
 }
+/* Art Gallery Section */
+#art-gallery {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+#art-gallery h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#art-gallery p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.art-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.art-item {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.art-image {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.art-item p {
+  font-size: 0.9rem;
+  color: #555;
+}
 
 /* Contact */
 #contact {
