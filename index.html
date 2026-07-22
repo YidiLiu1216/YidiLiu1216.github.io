@@ -3,126 +3,390 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yidi Liu Portfolio</title>
+  <title>Yidi Liu | Game Developer Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Navigation -->
-  <nav class="navbar">
-    <ul>
-      <li><a href="#about-me">About Me</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#art-gallery">Other Works</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">YL</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#gamejam">Game Jams</a></li>
+        <li><a href="#other">Other</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </nav>
 
-  <!-- About Me Section -->
-  <section id="about-me" class="section">
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Yidi Liu <span class="hero-cn">刘一笛</span></h1>
+      <p class="hero-title">Game Developer &amp; Interactive Media Designer</p>
+      <p class="hero-sub">M.S. Interactive Media &amp; Game Development @ WPI &nbsp;|&nbsp; Unity &middot; C# &middot; C++</p>
+      <div class="hero-links">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="https://edith-liu.itch.io/" target="_blank" class="btn btn-outline">Itch.io</a>
+        <a href="https://github.com/YidiLiu1216" target="_blank" class="btn btn-outline">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
     <div class="container">
-      <h2>About Me</h2>
-      <div class="about-me-content">
-        <img src="img/photo.jpg" alt="Photo of Yidi Liu" class="profile-photo">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-photo-wrap">
+          <img src="img/photo.jpg" alt="Photo of Yidi Liu" class="about-photo">
+        </div>
         <div class="about-text">
-          <p>Hello! My name is Yidi Liu, and I'm passionate about game design and development.<br>
-             I use C#, Python and Java for programming.<br>
-             I build game on Unity, draw concept and level with figma, draw.io.<br>
-             I produce trailer with Pr and do simple 3D modeling with Maya.<br>
-             Outside of game development, I enjoy photography, bird watching, stargazing and lines and watercolor.</p>
-          <div class="link-container">
-            <a href="https://drive.google.com/file/d/1yRfjwuUKItjLPq_bzZ3zmLopjURJuW-6/view?usp=drive_link" download="Yidi_Liu_Resume" class="button">My Resume</a>
-            <a href="https://edith-liu.itch.io/" target="_blank" class="button">Visit My Itch.io Page</a>
+          <p>
+            I'm a game developer focused on <strong>client-side systems</strong> and <strong>gameplay programming</strong>.
+            I have experience building complete game systems from scratch — combat, inventory, save systems,
+            input handling, UI architecture, and editor tooling — in Unity with C#.
+          </p>
+          <p>
+            I've also developed a <strong>C++ native plugin</strong> with Win32 API for global input hooks,
+            worked with <strong>Shader Graph</strong>, <strong>ML-Agents</strong>, and <strong>NavMesh</strong>,
+            and have a research background in deep learning (GANs / computer vision).
+          </p>
+          <p>
+            I thrive in fast-paced environments — <strong>5 Game Jams</strong> (including 2 GGJs),
+            always as lead or sole programmer.
+          </p>
+
+          <div class="skill-tags">
+            <h3>Technical Skills</h3>
+            <div class="tags">
+              <span class="tag tag-lang">C#</span>
+              <span class="tag tag-lang">C/C++</span>
+              <span class="tag tag-lang">Python</span>
+              <span class="tag tag-engine">Unity</span>
+              <span class="tag tag-engine">UE5</span>
+              <span class="tag tag-tool">Shader Graph</span>
+              <span class="tag tag-tool">ML-Agents</span>
+              <span class="tag tag-tool">NavMesh</span>
+              <span class="tag tag-tool">Cinemachine</span>
+              <span class="tag tag-tool">URP</span>
+              <span class="tag tag-tool">New Input System</span>
+              <span class="tag tag-tool">Timeline</span>
+              <span class="tag tag-other">Git</span>
+              <span class="tag tag-other">Win32 API</span>
+              <span class="tag tag-other">P/Invoke</span>
+              <span class="tag tag-other">TensorFlow</span>
+              <span class="tag tag-other">PyTorch</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Portfolio Section -->
-  <section id="portfolio" class="section">
+  <!-- Featured Projects Section -->
+  <section id="projects" class="section section-alt">
     <div class="container">
-      <h2>Portfolio</h2>
-      <div class="portfolio-grid">
-        <!-- Portfolio Item -->
-          <div class="portfolio-item">
-          <img src="img/fragment.png" alt="Preview of Essay Deadline Game" class="portfolio-image">
-          <h3>Fragment of Yesterday</h3>
-          <p>A 3D game about relationship between memory, emotional connection, and space pieces.</p>
-          <div class="project-links">
-            <a href="https://edith-liu.itch.io/fragmentofyesterday" target="_blank" class="button">Download on Itch.io</a>
-            <a href="https://drive.google.com/file/d/1D_5uT1iOL1wGc-aW3CEIKo6ENMWdJPGh/view?usp=sharing" target="_blank" class="button">Portfolio Documentation</a>
-            <a href="https://www.youtube.com/watch?v=b4ab-lWmcK8" target="_blank" class="button">Watch Trailer on YouTube</a>
+      <h2 class="section-title">Featured Projects</h2>
+
+      <!-- Valiant Squad -->
+      <div class="project-card project-featured">
+        <div class="project-media">
+          <img src="img/valiant.png" alt="Valiant Squad Preview" class="project-img">
+        </div>
+        <div class="project-info">
+          <div class="project-header">
+            <h3>Valiant Squad</h3>
+            <span class="project-date">2025.12 — 2026.4</span>
+          </div>
+          <p class="project-role">Solo Developer (All Programming / Numerical Design) &nbsp;|&nbsp; 2-person team</p>
+          <p>A pixel-art idle desktop-pet RPG. The game sits on your desktop as a transparent, borderless, always-on-top window — even when unfocused.</p>
+          <ul class="project-highlights">
+            <li>Multi-stage dungeon battle flow with multi-factor damage formula (defense diminishing returns, elemental matrix, crit, typing-speed decay bonus)</li>
+            <li>C++ global input hook plugin (Low-Level Hook + P/Invoke) for capturing keyboard/mouse input while window is unfocused</li>
+            <li>MVC architecture separating data, presentation, and logic layers; event-driven inter-module communication</li>
+            <li>ScriptableObject multi-tier data architecture (monster config, item database, 3-layer probability loot tables)</li>
+            <li>Interface-driven multi-slot save system (JSON + XOR encryption + coroutine auto-save)</li>
+            <li>Inventory, shop, recipe crafting systems; 30 modular easing curves; TMP per-character vertex animation</li>
+          </ul>
+          <div class="project-tags">
+            <span class="tag tag-engine">Unity</span>
+            <span class="tag tag-lang">C#</span>
+            <span class="tag tag-lang">C++</span>
+            <span class="tag tag-tool">Win32 API</span>
+            <span class="tag tag-tool">P/Invoke</span>
+            <span class="tag tag-tool">Cinemachine</span>
+            <span class="tag tag-tool">Shader Graph</span>
           </div>
         </div>
-        
-         <div class="portfolio-item">
-          <img src="img/top.png" alt="Preview of Essay Deadline Game" class="portfolio-image">
-          <h3>Top 3 Reasons You Will Miss Your Essay Deadline</h3>
+      </div>
+
+      <!-- Fragment of Yesterday -->
+      <div class="project-card">
+        <div class="project-media">
+          <img src="img/fragment.png" alt="Fragment of Yesterday Preview" class="project-img">
+        </div>
+        <div class="project-info">
+          <div class="project-header">
+            <h3>Fragments of Yesterday</h3>
+            <span class="project-date">2024.2 — 2024.4</span>
+          </div>
+          <p class="project-role">Solo Developer</p>
+          <p>A 3D puzzle game about memory, emotional connection, and fragmented spaces.</p>
+          <ul class="project-highlights">
+            <li>Level design and character controller</li>
+            <li>Shader Graph dynamic dissolve effect for scene transitions</li>
+            <li>Timeline-driven cinematic animation sequences</li>
+          </ul>
+          <div class="project-tags">
+            <span class="tag tag-engine">Unity 3D</span>
+            <span class="tag tag-tool">Shader Graph</span>
+            <span class="tag tag-tool">Timeline</span>
+          </div>
+          <div class="project-links">
+            <a href="https://edith-liu.itch.io/fragmentofyesterday" target="_blank" class="btn btn-sm">Itch.io</a>
+            <a href="https://drive.google.com/file/d/1D_5uT1iOL1wGc-aW3CEIKo6ENMWdJPGh/view?usp=sharing" target="_blank" class="btn btn-sm">Documentation</a>
+            <a href="https://www.youtube.com/watch?v=b4ab-lWmcK8" target="_blank" class="btn btn-sm">Trailer</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mind Battlefront -->
+      <div class="project-card">
+        <div class="project-media">
+          <img src="img/battle.png" alt="Mind Battlefront Preview" class="project-img">
+        </div>
+        <div class="project-info">
+          <div class="project-header">
+            <h3>Mind Battlefront</h3>
+            <span class="project-date">2024.7 — 2024.8</span>
+          </div>
+          <p class="project-role">Solo Developer</p>
+          <p>A grid-based turn-by-turn strategy game pitting human strategy against reinforcement learning AI.</p>
+          <ul class="project-highlights">
+            <li>Grid movement and turn-based rotation system</li>
+            <li>Unity ML-Agents reinforcement learning trained enemy AI</li>
+          </ul>
+          <div class="project-tags">
+            <span class="tag tag-engine">Unity</span>
+            <span class="tag tag-lang">C#</span>
+            <span class="tag tag-tool">ML-Agents</span>
+          </div>
+          <div class="project-links">
+            <a href="https://drive.google.com/file/d/1Y4iQFvc2LcFwdZnmYGOnXsUXn6nrXY9n/view?usp=sharing" target="_blank" class="btn btn-sm">Documentation</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Top 3 Reasons -->
+      <div class="project-card">
+        <div class="project-media">
+          <img src="img/top.png" alt="Top 3 Reasons Preview" class="project-img">
+        </div>
+        <div class="project-info">
+          <div class="project-header">
+            <h3>Top 3 Reasons You Will Miss Your Essay Deadline</h3>
+            <span class="project-date">2024</span>
+          </div>
           <p>A 2D platformer about overwhelming internet distractions and information overload.</p>
+          <div class="project-tags">
+            <span class="tag tag-engine">Unity</span>
+            <span class="tag tag-lang">C#</span>
+          </div>
           <div class="project-links">
-            <a href="https://edith-liu.itch.io/top3reasonsyouwillmissyouressaydeadline" target="_blank" class="button">Play on Itch.io</a>
-            <a href="https://drive.google.com/file/d/1FoYPoplecmEWVI5HGH9NAyeMEwa78CnP/view?usp=sharing" target="_blank" class="button">Portfolio Documentation</a>
-            <a href="https://youtu.be/L-bLzuR7t3Y" target="_blank" class="button">Watch Trailer on YouTube</a>
+            <a href="https://edith-liu.itch.io/top3reasonsyouwillmissyouressaydeadline" target="_blank" class="btn btn-sm">Play on Itch.io</a>
+            <a href="https://drive.google.com/file/d/1FoYPoplecmEWVI5HGH9NAyeMEwa78CnP/view?usp=sharing" target="_blank" class="btn btn-sm">Documentation</a>
+            <a href="https://youtu.be/L-bLzuR7t3Y" target="_blank" class="btn btn-sm">Trailer</a>
           </div>
         </div>
+      </div>
 
-         <div class="portfolio-item">
-          <img src="img/wings.png" alt="Preview of Essay Deadline Game" class="portfolio-image">
-          <h3>Wings of Migration</h3>
+      <!-- Wings of Migration -->
+      <div class="project-card">
+        <div class="project-media">
+          <img src="img/wings.png" alt="Wings of Migration Preview" class="project-img">
+        </div>
+        <div class="project-info">
+          <div class="project-header">
+            <h3>Wings of Migration</h3>
+            <span class="project-date">2024</span>
+          </div>
           <p>A board game about bird migration and conservation challenges.</p>
+          <div class="project-tags">
+            <span class="tag tag-other">Board Game</span>
+            <span class="tag tag-other">Game Design</span>
+          </div>
           <div class="project-links">
-            <a href="https://drive.google.com/file/d/1mtlXI7F0M6uwkDAbWzswjjphhzRdo8dF/view?usp=sharing" target="_blank" class="button">Portfolio Documentation</a>
-            <a href="https://drive.google.com/file/d/1UGpn2_y5HvMWuZOY3Y9_3BavHN7h6jKA/view?usp=sharing" target="_blank" class="button">Rule Book</a>
+            <a href="https://drive.google.com/file/d/1mtlXI7F0M6uwkDAbWzswjjphhzRdo8dF/view?usp=sharing" target="_blank" class="btn btn-sm">Documentation</a>
+            <a href="https://drive.google.com/file/d/1UGpn2_y5HvMWuZOY3Y9_3BavHN7h6jKA/view?usp=sharing" target="_blank" class="btn btn-sm">Rule Book</a>
           </div>
         </div>
-        
-        <div class="portfolio-item">
-          <img src="img/battle.png" alt="Preview of Mind Battlefront" class="portfolio-image">
-          <h3>Mind Battlefront</h3>
-          <p>A grid-based strategy game about human strategy vs reinforcement model learning ability.</p>
-          <div class="project-links">
-            <a href="https://drive.google.com/file/d/1Y4iQFvc2LcFwdZnmYGOnXsUXn6nrXY9n/view?usp=sharing" target="_blank" class="button">Portfolio Documentation</a>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
-  
-<section id="art-gallery" class="section">
-  <div class="container">
-    <h2>Other Works</h2>
-    <p>These are practices I made by following online courses and youtube videos.</p>
-    <div class="art-gallery-grid">
-      <!-- Artwork 1 -->
-      <div class="art-item">
-        <img src="img/chess.jpg" alt="3D Model 1" class="art-image">
-        <p> Chess and Board (MAYA)</p>
-        <p>Made by Following the Instructions From "Complete Guide to Maya 2024" (Udemy)</p>
+
+  <!-- Game Jam Section -->
+  <section id="gamejam" class="section">
+    <div class="container">
+      <h2 class="section-title">Game Jam Experience</h2>
+      <p class="section-sub">5 jams &middot; always lead or sole programmer &middot; shipped every time</p>
+
+      <div class="jam-grid">
+        <!-- Among Them -->
+        <div class="jam-card">
+          <div class="jam-badge">GGJ 2026</div>
+          <h3>Among Them</h3>
+          <p class="jam-meta">48h &middot; Lead Programmer (6-person team) &middot; Theme: Mask</p>
+          <p>Single-player horror game where swapping masks changes how monsters interact with you.</p>
+          <ul>
+            <li>Runtime Texture2D minimap fog-of-war (world→UV→pixel mapping)</li>
+            <li>URP lighting & line-of-sight occlusion</li>
+            <li>Player controller, mask ability system, distance-driven dynamic heartbeat audio</li>
+            <li>Centralized static event system for decoupled module communication</li>
+          </ul>
+          <div class="project-tags">
+            <span class="tag tag-engine">Unity</span>
+            <span class="tag tag-tool">NavMesh</span>
+            <span class="tag tag-tool">URP</span>
+            <span class="tag tag-tool">New Input System</span>
+          </div>
+        </div>
+
+        <!-- LAGGING BEHIND -->
+        <div class="jam-card">
+          <div class="jam-badge">School Jam 2025</div>
+          <h3>LAGGING BEHIND</h3>
+          <p class="jam-meta">3 days &middot; Sole Programmer (2-person team)</p>
+          <p>Find the abnormal NPCs on a busy street before time runs out.</p>
+          <ul>
+            <li>OOP NPC behavior inheritance hierarchy with Boids separation steering</li>
+            <li>Object pool system (pre-warm, auto-expand, type counting)</li>
+            <li>Short-press / long-press dual-mode mouse interaction + sanity system</li>
+          </ul>
+          <div class="project-tags">
+            <span class="tag tag-engine">Unity</span>
+            <span class="tag tag-lang">C#</span>
+            <span class="tag tag-other">OOP</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/YidiLiu1216/LAGGING-BEHIND" target="_blank" class="btn btn-sm">GitHub</a>
+          </div>
+        </div>
+
+        <!-- Raccoon -->
+        <div class="jam-card">
+          <div class="jam-badge">Minigame Jam 2025</div>
+          <h3>Raccoon</h3>
+          <p class="jam-meta">Lead Programmer (5-person team)</p>
+          <p>Local multiplayer party game — collect resources and attack others to score.</p>
+          <ul>
+            <li>[Flags] permission system with reference-counted ActionLocker + IDisposable RAII auto-unlock</li>
+            <li>Physics-driven projectile system</li>
+            <li>Integrated game into existing Minigame Manager rotation framework</li>
+          </ul>
+          <div class="project-tags">
+            <span class="tag tag-engine">Unity</span>
+            <span class="tag tag-lang">C#</span>
+          </div>
+        </div>
+
+        <!-- MonkeyKing -->
+        <div class="jam-card">
+          <div class="jam-badge">GGJ 2024</div>
+          <h3>MonkeyKing 决战猴王之巅</h3>
+          <p class="jam-meta">48h &middot; Sole Programmer (4-person team) &middot; Theme: Make Me Laugh</p>
+          <p>Local 2-player competitive fruit-throwing battle game.</p>
+          <ul>
+            <li>Split keyboard input (Player1: A/S/D, Player2: J/K/L)</li>
+            <li>HTML5 + Windows dual-platform release</li>
+          </ul>
+          <div class="project-tags">
+            <span class="tag tag-engine">Unity</span>
+            <span class="tag tag-lang">C#</span>
+          </div>
+          <div class="project-links">
+            <a href="https://edith-liu.itch.io/monkeyking" target="_blank" class="btn btn-sm">Itch.io</a>
+          </div>
+        </div>
+
+        <!-- Planet Rush -->
+        <div class="jam-card">
+          <div class="jam-badge">My First Jam 2023</div>
+          <h3>Planet Rush</h3>
+          <p class="jam-meta">Solo Developer (Programming + Art)</p>
+          <p>My very first game jam entry — a fast-paced action game.</p>
+          <div class="project-tags">
+            <span class="tag tag-engine">Unity</span>
+            <span class="tag tag-lang">C#</span>
+          </div>
+        </div>
       </div>
-      <!-- Artwork 2 -->
-      <div class="art-item">
-        <img src="img/monsters.jpg" alt="3D Model 2" class="art-image">
-        <p>Monster (MAYA)</p>
-        <p>Made by Following the Instructions From "Complete Guide to Maya 2024" (Udemy)</p>
-      </div>
-     
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- Other Works -->
+  <section id="other" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Other Works</h2>
+
+      <div class="other-grid">
+        <div class="other-card">
+          <h3>Research Assistant — Emory University</h3>
+          <p class="project-date">2020 — 2023</p>
+          <p>Multi-stage Conditional GAN framework for fashion texture transfer. Built image processing and deep learning pipelines with TensorFlow, PyTorch, and OpenCV.</p>
+          <div class="project-tags">
+            <span class="tag tag-lang">Python</span>
+            <span class="tag tag-other">TensorFlow</span>
+            <span class="tag tag-other">PyTorch</span>
+            <span class="tag tag-other">OpenCV</span>
+            <span class="tag tag-other">GANs</span>
+          </div>
+        </div>
+
+        <div class="other-card">
+          <h3>3D Modeling Practice</h3>
+          <p>Made by following "Complete Guide to Maya 2024" (Udemy)</p>
+          <div class="other-images">
+            <img src="img/chess.jpg" alt="Chess and Board 3D Model">
+            <img src="img/monsters.jpg" alt="Monster 3D Model">
+          </div>
+          <div class="project-tags">
+            <span class="tag tag-other">Maya</span>
+            <span class="tag tag-other">3D Modeling</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Contact Section -->
   <section id="contact" class="section">
     <div class="container">
-      <h2>Contact Me</h2>
-      <p>If you'd like to get in touch, feel free to email me at:</p>
-      <p><a 	yidi.liu256@gmail.com" class="contact-link">	yidi.liu256@gmail.com</a></p>
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-text">I'm currently looking for <strong>game client development</strong> and <strong>gameplay programming</strong> positions for 2027 graduation. Feel free to reach out!</p>
+      <div class="contact-links">
+        <a href="mailto:yidi.liu256@gmail.com" class="btn btn-primary">yidi.liu256@gmail.com</a>
+        <a href="https://github.com/YidiLiu1216" target="_blank" class="btn btn-outline">GitHub</a>
+        <a href="https://edith-liu.itch.io/" target="_blank" class="btn btn-outline">Itch.io</a>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2024 Yidi Liu. All rights reserved.</p>
+    <p>&copy; 2025 Yidi Liu. All rights reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
 
