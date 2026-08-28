@@ -1,4 +1,4 @@
-/* ==========  v4 ========== */ 
+/* ========== Bauhaus / Blueprint Portfolio Theme v4 ========== */
 :root {
   --bg: #0c1220;
   --bg-alt: #0f1628;
@@ -648,4 +648,3 @@ footer {
   .jam-grid { grid-template-columns: 1fr; }
   .jam-gallery { grid-template-columns: repeat(3, 1fr); }
 }
-
