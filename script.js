@@ -8,36 +8,34 @@ if (toggle) {
   });
 }
 
-// Close mobile nav on link click
 document.querySelectorAll('.nav-links a').forEach(link => {
   link.addEventListener('click', () => {
     navLinks.classList.remove('active');
   });
 });
 
-// Scroll-triggered fade-in animations
+// Scroll-triggered fade-in
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('visible');
     }
   });
-}, { threshold: 0.1 });
+}, { threshold: 0.08 });
 
-// Add fade-in class to animatable elements
 document.querySelectorAll(
-  '.project-card, .jam-card, .other-card, .about-grid, .section-title, .section-sub'
+  '.project-card, .jam-card, .other-card, .section-header, .skill-tags, .about-grid'
 ).forEach(el => {
   el.classList.add('fade-in');
   observer.observe(el);
 });
 
-// Navbar background on scroll
+// Navbar scroll
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
   if (window.scrollY > 50) {
-    navbar.style.background = 'rgba(15, 15, 19, 0.95)';
+    navbar.style.background = 'rgba(12, 18, 32, 0.97)';
   } else {
-    navbar.style.background = 'rgba(15, 15, 19, 0.85)';
+    navbar.style.background = 'rgba(12, 18, 32, 0.92)';
   }
 });
