@@ -7,7 +7,7 @@ if (toggle) {
     navLinks.classList.toggle('active');
   });
 }
- 
+
 // Close mobile nav on link click
 document.querySelectorAll('.nav-links a').forEach(link => {
   link.addEventListener('click', () => {
