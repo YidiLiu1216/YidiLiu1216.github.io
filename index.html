@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yidi Liu | Game Developer Portfolio</title>
@@ -30,7 +30,7 @@
   <section id="hero" class="hero">
     <div class="hero-content">
       <div class="hero-left">
-        <p class="hero-number">// Portfolio.2025</p>
+        <p class="hero-number">// Portfolio.2026</p>
         <h1 class="hero-name">YIDI LIU</h1>
         <span class="hero-name-cn">刘一笛</span>
         <p class="hero-title">GAME DEVELOPER &amp; GAMEPLAY PROGRAMMER</p>
@@ -42,7 +42,7 @@
         </div>
       </div>
       <div class="hero-right">
-        <img src="img/photo1.jpg" alt="Yidi Liu" class="hero-photo">
+        <img src="img/photo.jpg" alt="Yidi Liu" class="hero-photo">
       </div>
     </div>
   </section>
@@ -63,9 +63,10 @@
             input handling, UI architecture, and editor tooling — in Unity with C#.
           </p>
           <p>
-            I've developed a <strong>C++ native plugin</strong> with Win32 API for global input hooks,
-            worked with <strong>Shader Graph</strong>, <strong>ML-Agents</strong>, and <strong>NavMesh</strong>,
-            and have a research background in deep learning (GANs / computer vision).
+            I've built <strong>multiplayer systems</strong> with Unity Netcode (server-authoritative, Relay, session management),
+            developed a <strong>C++ native plugin</strong> with Win32 API for global input hooks,
+            and worked with <strong>Shader Graph</strong>, <strong>ML-Agents</strong>, and <strong>NavMesh</strong>.
+            Research background in deep learning (GANs / computer vision).
           </p>
           <p>
             I thrive in fast-paced environments — 5 Game Jams (including 2 GGJs),
@@ -86,6 +87,7 @@
           <span class="tag tag-tool">NavMesh</span>
           <span class="tag tag-tool">Cinemachine</span>
           <span class="tag tag-tool">URP</span>
+          <span class="tag tag-tool">Netcode for GameObjects</span>
           <span class="tag tag-tool">New Input System</span>
           <span class="tag tag-tool">Timeline</span>
           <span class="tag tag-other">Git</span>
@@ -109,14 +111,13 @@
 
       <div class="projects-list">
         <!-- Valiant Squad -->
-        <div class="project-card featured">
-          <span class="project-badge">Featured</span>
+        <div class="project-card">
           <div class="project-media">
             <img src="img/valiant.png" alt="Valiant Squad Preview" class="project-img">
           </div>
           <div class="project-info">
             <div class="project-header">
-              <h3>VALIANT SQUAD</h3>
+              <h3>TAPTAPCAT ADVENTURE</h3>
               <span class="project-date">2025.12 — 2026.4</span>
             </div>
             <p class="project-role">Solo Dev: All Programming / Numerical Design | 2-person team</p>
@@ -136,6 +137,35 @@
               <span class="tag tag-tool">Win32 API</span>
               <span class="tag tag-tool">Cinemachine</span>
               <span class="tag tag-tool">Shader Graph</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Co-op Boss Arena -->
+        <div class="project-card">
+          <div class="project-media">
+            <img src="img/boss_arena.png" alt="Co-op Boss Arena Preview" class="project-img">
+          </div>
+          <div class="project-info">
+            <div class="project-header">
+              <h3>CO-OP BOSS ARENA</h3>
+              <span class="project-date">2026.8 — 2026.9</span>
+            </div>
+            <p class="project-role">Solo Dev | Multiplayer Co-op Boss Fight Demo</p>
+            <p class="project-desc">A 1–4 player online co-op boss fight demo built with Unity Netcode for GameObjects. Server-authoritative architecture with full lobby system.</p>
+            <ul class="project-highlights">
+              <li>Server-authoritative architecture — all damage/HP runs on server via Rpc &amp; NetworkVariable</li>
+              <li>Full online lobby: session create, join-by-code, quick match, password, ready check, host migration</li>
+              <li>Boss AI driven by reusable generic FSM (7 states, 9 transitions) with NavMeshAgent pathfinding</li>
+              <li>ScriptableObject-configured combat: AOE ground slam, cone punch, dynamic target reselection</li>
+              <li>Unity Relay for NAT traversal; structured error handling with typed result objects</li>
+            </ul>
+            <div class="project-tags">
+              <span class="tag tag-engine">Unity</span>
+              <span class="tag tag-lang">C#</span>
+              <span class="tag tag-tool">Netcode for GameObjects</span>
+              <span class="tag tag-tool">Unity Services</span>
+              <span class="tag tag-tool">NavMesh</span>
             </div>
           </div>
         </div>
@@ -420,13 +450,14 @@
         <a href="mailto:yidi.liu256@gmail.com" class="btn btn-primary">yidi.liu256@gmail.com</a>
         <a href="https://github.com/YidiLiu1216" target="_blank" class="btn btn-outline">GitHub</a>
         <a href="https://edith-liu.itch.io/" target="_blank" class="btn btn-outline">Itch.io</a>
+        <span class="contact-wechat">WeChat: Edith010203</span>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Yidi Liu &mdash; Built for Games</p>
+    <p>&copy; 2026 Yidi Liu &mdash; Built for Games</p>
   </footer>
 
   <script src="script.js"></script>
