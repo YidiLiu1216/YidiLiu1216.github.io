@@ -229,16 +229,17 @@ ul { list-style: none; }
 .btn-sm {
   padding: 0.3rem 0.7rem;
   font-size: 0.7rem;
-  background: transparent;
-  color: var(--text-muted);
-  border: 1px solid var(--border);
+  background: rgba(200, 80, 58, 0.08);
+  color: #e07a68;
+  border: 1px solid rgba(200, 80, 58, 0.5);
   font-family: var(--mono);
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
 .btn-sm:hover {
-  border-color: var(--cream);
-  color: var(--cream);
+  background: var(--red);
+  color: #fff;
+  border-color: var(--red);
 }
 
 /* ========== Sections ========== */
@@ -325,9 +326,9 @@ ul { list-style: none; }
   text-transform: uppercase;
 }
 
-.tag-lang { border-color: var(--cream); color: var(--cream-dim); }
-.tag-engine { border-color: var(--blue-bright); color: var(--blue-bright); }
-.tag-tool { border-color: var(--blue-line); color: var(--text-muted); }
+.tag-lang { border-color: var(--cream-dim); color: var(--cream-dim); }
+.tag-engine { border-color: var(--cream-dim); color: var(--cream-dim); }
+.tag-tool { border-color: var(--border-light); color: var(--text-muted); }
 .tag-other { border-color: var(--border-light); color: var(--text-muted); }
 
 /* ========== Project Cards (Data Sheet Style) ========== */
@@ -588,6 +589,17 @@ ul { list-style: none; }
   display: flex; gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.contact-wechat {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.6rem 1.4rem;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+  border: 1px solid var(--border-light);
 }
 
 /* ========== Footer ========== */
